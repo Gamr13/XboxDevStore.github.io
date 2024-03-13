@@ -2,24 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body { /* Main background colour */
     background: #6699ff;
-    background-repeat: no-repeat;
 }
 
-.header {
+.header {  /* Top banner on the Index.html page */
     background-color: #003399;
-    text-align: center;
-    color: #fff;
 }
 
-.header .logo {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    max-height: 100px;
-}
-
-.apps .title,
+.apps .title, /* | Apps text on top of the cards */
 .games .title {
     border-left: 8px solid #003399;
     padding-left: 0.8rem;
@@ -28,12 +19,12 @@ body {
     color: #ffffff;
 }
 
-.apps .card-title,
+.apps .card-title, /* Handles the title of the app for the card: e.g. RETROARCH */
 .games .card-title {
     text-transform: uppercase;
 }
 
-.apps .card-img-top,
+.apps .card-img-top, /* Handles images in the cards */
 .games .card-img-top {
     height: 200px;
     -o-object-fit: cover;
@@ -45,32 +36,26 @@ body {
     min-height: 100px;
 }
 
-.apps.games,
-.games.games {
-    background: #80aaff;
+.card { /* Handles the body of the card */
+    box-shadow: 10px 10px #003399;
 }
 
-.footer {
+.footer { /* Bottom bar of the page */
     background-color: #003399;
     text-align: center;
-    color: #fff;
+    color: white;
 }
 
-.green {
+.green { /* Literally only used for the green text on index.html */
     color: green;
 }
 
-.red {
+.red { /* Is there a better way to do this? I'm not sure. */
     color: red;
 }
 
-.card {
-    box-shadow: 10px 10px #003399;
-}
-/*# sourceMappingURL=style.css.map */
-
 /* Sidebar */
-.sidebar {
+.sidebar { /* You'll never guess what this one's for! -- Guide page*/
     position: fixed;
     top: 0;
     bottom: 0;
@@ -78,33 +63,27 @@ body {
     padding: 58px 0 0; /* Height of navbar */
     box-shadow: 0 1px 7px #003399;
     width: 240px;
-    z-index: 600;
-  }
- 
-@media (max-width: 991.98px) {
-    .sidebar {
-        width: 100%;
-    }
 }
-  .sidebar .active {
-    border-radius: 5px;
-  }
-  
-  .sidebar-sticky {
+
+.sidebar .active { /* Rounded buttons on the sidebar */
+    border-radius: 7px;
+}
+
+.sidebar-sticky {
     position: fixed;
     top: 0;
     height: calc(100vh - 48px);
     padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
+}
 
-.menulayout {
-    margin-top: 58px
+.guidebox { 
+    margin-top: 70px
 }
 
 .intro {
-    margin-bottom: 40px;
+
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -123,18 +102,18 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
   
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     background-color: #003399;
-  }
+}
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -142,11 +121,19 @@ body {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
