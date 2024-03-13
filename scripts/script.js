@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateMainContentAndSidebar(sectionName) {
         const htmlContent = contentMap[sectionName] || "<h2>Not Available</h2><p>No content available for this section.</p>"; // Default message if sectionName not found
         contentSection.innerHTML = htmlContent; // Replaces the innerHTML of the content section
-        
         sidebarLinks.forEach(link => {
             link.classList.remove('active');
         });
