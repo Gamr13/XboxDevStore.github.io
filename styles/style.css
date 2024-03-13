@@ -70,7 +70,7 @@ body { /* Main background colour */
 }
 
 .sidebar-sticky {
-    position: fixed;
+    position: absolute;
     top: 0;
     height: calc(100vh - 48px);
     padding-top: 0.5rem;
